@@ -30,7 +30,7 @@ public class Jenkin01 {
         driver = new ChromeDriver(options);
 
     }
-    @Test
+    @Test (priority = 1, groups = {"Negative"})
     @Severity(SeverityLevel.BLOCKER)
     @Description("TC#1 - Verify that with Invalid username and Valid password, Login is not sucessfull !!")
 
@@ -69,7 +69,7 @@ public class Jenkin01 {
 
     }
 
-    @Test
+    @Test (priority = 2, groups = {"Positive","stage"})
     @Description("Verify that with Invalid username and Valid password, Login is sucessfull !!")
     public void testValidLogin() throws InterruptedException {
 

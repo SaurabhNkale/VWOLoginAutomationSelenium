@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="C:/Users/SAURABH/IdeaProjects/Jenkinfirsttry">
+        <classes>
+            <class name="org.example.Jenkin01">
+                <methods>
+                    <include name="testInvalidLogin"/>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+        <groups>
+            <run>
+                <include name="Stage"></include>
+            </run>
+        </groups>
+    </test>
+</suite>
